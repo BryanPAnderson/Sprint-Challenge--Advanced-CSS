@@ -1,4 +1,17 @@
 // Home Content
+.top {
+  background-color: lightgray;
+}
+
+.title {
+  .center();
+  font-size: @titile-font-size;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-right: auto;
+  padding-left: auto;
+}
 
 .home {
 
@@ -25,6 +38,22 @@
       border-radius: 20px;
       height: 100%;
     }
+
+    
+    .sky {
+      @media( max-width: 500px) {
+        display: none;
+      }
+    }
+
+    .launch {
+      @media( max-width: 500px) {
+        display: none;
+      }
+
+    }
+    
+    
   }
 
   .visit-planets {
@@ -58,6 +87,12 @@
       }
 
       .btn {
+        .sign-up(teal, white);
+        
+        &:hover {
+          // The compiled color returned is #006667 
+            background-color: darken(teal, 10%)
+        }
       }
     }
 

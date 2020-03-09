@@ -1,1 +1,23 @@
 // Mixins Here
+.center(){
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navflex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.sign-up(@background, @text) {
+    background-color: @background;
+    color: @text;
+    width: 35%;
+    padding: 10px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
